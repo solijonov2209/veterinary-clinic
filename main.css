@@ -944,6 +944,17 @@ border-color:  #FFBD54;
   justify-content: space-between;
   padding-bottom: 28px;
 }
+.footer-logo-link{
+  text-decoration: none;
+  transition: opacity 0.3s linear;
+}
+.footer-logo-link:hover{
+  opacity: 0.8;
+}
+.footer-logo-link:active{
+  opacity: 0.6;
+}
+
 .footer-list{
   display: flex;
   margin-top: 0;
