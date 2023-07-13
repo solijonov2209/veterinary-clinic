@@ -394,6 +394,8 @@ line-height: normal;
   line-height: normal;
   text-decoration: none;
   color: #333;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
 .hero-tel-link:hover{
@@ -425,8 +427,12 @@ line-height: normal;
   min-width: 1200px;
   max-width: 1450px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 /* Finish Main  */
