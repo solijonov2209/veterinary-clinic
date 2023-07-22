@@ -347,10 +347,15 @@ img{
   line-height: 20px; /* 125% */
  }
  .services__list{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 305px 30px 305px 30px 305px 30px 305px;
   grid-template-columns: repeat(4,305px);
+  -ms-grid-rows: 420px 34px 420px 34px 420px;
   grid-template-rows: repeat(3,420px);
-  column-gap: 30px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   row-gap: 34px;
   margin-top: 0;
   margin-bottom: 0;
@@ -358,11 +363,75 @@ img{
   list-style: none;
 
  }
+ .services__list > *:nth-child(1){
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+
+ }
+ .services__list > *:nth-child(2){
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+
+ }
+ .services__list > *:nth-child(3){
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+
+ }
+ .services__list > *:nth-child(4){
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+
+ }
+ .services__list > *:nth-child(5){
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+
+ }
+ .services__list > *:nth-child(6){
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+
+ }
+ .services__list > *:nth-child(7){
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+
+ }
+ .services__list > *:nth-child(8){
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+
+ }
+ .services__list > *:nth-child(9){
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+
+ }
+ .services__list > *:nth-child(10){
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+
+ }
+ .services__list > *:nth-child(11){
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+
+ }
+ .services__list > *:nth-child(12){
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+
+ }
  .services__item{
   border-radius: 5px 5px 0px 0px;
 background: #FFF;
 padding: 0 22px 45px 53px;
+-webkit-transition:-webkit-box-shadow 0.3s linear;
+transition:-webkit-box-shadow 0.3s linear;
+-o-transition:box-shadow 0.3s linear;
 transition:box-shadow 0.3s linear;
+transition:box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
  }
  .card::before{
   position: relative;
@@ -438,10 +507,13 @@ line-height: normal;
 text-decoration: none;
   border-radius: 3px;
 background-color: #FFBD54;
+-webkit-transition: background-color 0.3s linear;
+-o-transition: background-color 0.3s linear;
 transition: background-color 0.3s linear;
  }
  .card:hover{
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);;
  }
  .card:nth-child(2n+1) .card__link:hover{
   background-color: #000;
